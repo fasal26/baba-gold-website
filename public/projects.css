@@ -1,0 +1,41 @@
+.prd-container{
+    padding-top: 150px;
+    position: relative;
+}
+
+.prd-container > h1{
+    color: var(--sa-custom-v1);
+    display: flex;
+    justify-content: center;
+}
+
+.prd-container > img{
+    position: absolute;
+    z-index: 2;
+    right: 100px;
+    bottom: 135px;
+}
+
+.prd-img-container{
+    padding-top: 45px;
+    display: flex;
+    overflow: auto;
+    gap: 30px;
+    aspect-ratio: 3.7;
+    scroll-behavior: smooth;
+}
+
+.prd-img{
+    min-width: 18%;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.prd-img img{
+    min-height: 61%;
+}
+
+::-webkit-scrollbar{width:0px}

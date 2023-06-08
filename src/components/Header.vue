@@ -1,5 +1,6 @@
 <template>
     <div class="doc-banner-container" id="doc-banner">
+            <!-- <img src="../Assets/WhatsApp Image 2023-06-06 at 14.10.30.jpg" alt=""> -->
         <div class="docdet-mob doc-padding" @click="openMenu">
             <img src="../Assets/bars-staggered.png" alt="menu" class="navbar_menu" id="burger">
         </div>

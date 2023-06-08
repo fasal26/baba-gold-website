@@ -69,6 +69,40 @@
           </div>
       </div>
   </div>
+  <div class="prd-container doc-padding">
+    <h1> Our products </h1>
+        <img src="../Assets/right.png" alt="" class="pointer" @click="handleSlide('prd-img-id')">
+    <div class="prd-img-container" id="prd-img-id" style="scroll-behavior: smooth;">
+        <div class="prd-img baba-flex-col">
+            <img src="../Assets/Single-Gold-Bar-PNG-Photos.png" alt="gold bar">
+            <small>Emirates 1 Gram 999.9 Purity Gold Bar</small>
+        </div>
+        <div class="prd-img baba-flex-col">
+            <img src="../Assets/Single-Gold-Bar-PNG-Photos.png" alt="gold bar">
+            <small>Emirates 1 Gram 999.9 Purity Gold Bar</small>
+        </div>
+        <div class="prd-img baba-flex-col">
+            <img src="../Assets/Single-Gold-Bar-PNG-Photos.png" alt="gold bar">
+            <small>Emirates 1 Gram 999.9 Purity Gold Bar</small>
+        </div>
+        <div class="prd-img baba-flex-col">
+            <img src="../Assets/Single-Gold-Bar-PNG-Photos.png" alt="gold bar">
+            <small>Emirates 1 Gram 999.9 Purity Gold Bar</small>
+        </div>
+        <div class="prd-img baba-flex-col">
+            <img src="../Assets/Single-Gold-Bar-PNG-Photos.png" alt="gold bar">
+            <small>Emirates 1 Gram 999.9 Purity Gold Bar</small>
+        </div>
+        <div class="prd-img baba-flex-col">
+            <img src="../Assets/Single-Gold-Bar-PNG-Photos.png" alt="gold bar">
+            <small>Emirates 1 Gram 999.9 Purity Gold Bar</small>
+        </div>
+        <div class="prd-img baba-flex-col">
+            <img src="../Assets/Single-Gold-Bar-PNG-Photos.png" alt="gold bar">
+            <small>Emirates 1 Gram 999.9 Purity Gold Bar</small>
+        </div>
+    </div>
+  </div>
   <!-- <div class="baba-flex-col doc-padding desc-container">
     <h2 class="baba-flex">Why Choose Baba Gold?</h2>
     <p>Experience the power of gold: Discover the timeless allure and wealth-building potential of gold, a precious metal that has stood the test of time as a reliable investment.
@@ -91,11 +125,47 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 const router = useRouter()
+
+onMounted(() => {
+    carousel('prd-img-id')
+})
+
 function handleRoute(path){
     router.push(path)
 }
+const carousel = (id) => {
+    const slider = document.getElementById(id);
+    if(id && slider){
+        let isdown
+        let startX
+        let scrollLeft
+        slider.addEventListener('mousedown', e => {
+            isdown = true
+            startX = e.pageX - slider.offsetLeft
+            scrollLeft = slider.scrollLeft
+        })
+        document.addEventListener('mouseup', e => {
+            isdown = false
+        })
+        slider.addEventListener('mousemove', e => {
+            document.getElementById(id).style.scrollBehavior = "auto"
+            e.preventDefault()
+            if(!isdown) return
+            const x = e.pageX - slider.offsetLeft
+            const walk = x - startX
+            slider.scrollLeft = scrollLeft - walk
+        })
+    }
+}
+function handleSlide(id){
+    const slider = document.getElementById(id);
+    slider.style.scrollBehavior = "smooth"
+    slider.scrollLeft = slider.scrollLeft + 200
+}
+
 </script>
 
 <style scoped>
