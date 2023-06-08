@@ -1,0 +1,30 @@
+.desc-container {
+    margin: 100px 0;
+}
+
+.desc-container > h2{
+    justify-content: center;
+    color: var(--color-dark-gold);
+    margin-top: 25px;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.desc-container > ul{
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px 50px;
+}
+
+.desc-container > p{
+    padding: 45px 0;
+    line-height: 26px;
+}
+
+.desc-container > ul > li{
+    gap: 10px;
+    align-items: center;
+    color: #8D96A3;
+}

@@ -1,0 +1,42 @@
+.baba-abtus-conatiner{
+    margin: 130px 0 50px 0;
+}
+
+.baba-abtus{
+    padding: 0 150px;
+    gap: 60px;
+}
+
+.baba-abtus > img {
+    width: 50%;
+    height: 50%;
+    border-radius: 50px;
+}
+
+
+.abt-cntnt > h2{
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--color-dark-gold);
+    line-height: normal;
+    padding-bottom: 40px;
+    padding-top: 28px;
+}
+
+.abt-cntnt > h2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 5px;
+    width: 52px;
+    background: var(--color-dark-gold);;
+    border-radius: 90px;
+}
+
+.abt-cntnt > p {
+    width: 89%;
+    line-height: 25px;
+    padding-bottom: 20px;
+}

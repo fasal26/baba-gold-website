@@ -1,0 +1,150 @@
+.doc-none {
+    display: none;
+}
+
+.doc-switch {
+    display: block;
+}
+
+.docdet-cert {
+    display: none;
+}
+
+.sa-dialog{
+      display: none;
+  }
+
+.doc-flex{
+  display: flex;
+}
+
+.doc-padding{
+  padding: 0 120px;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.doc-banner-container{
+  position: absolute;
+}
+
+.docinfo-container{
+  background-color: #f4fcff;
+  flex-direction: column;
+  height: 55px;
+  justify-content: center;
+}
+
+.docinfo-container2{
+  background-color: #FFFFFF;
+  flex-direction: column;
+  height: 85px;
+  justify-content: center;
+}
+
+.header1{
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.doc-det{
+  align-items: center;
+}
+
+.docinfo-container > .header1 > .doc-det > p{
+  margin-left: 12px;
+  color: #243949;
+  font-size: 15px;
+}
+
+.docdet-container p{
+  color: #86909D;
+  font-size: 14px;
+  padding: 0 35px 0 20px;
+}
+
+.vertical-line{
+  border-left: 2px solid #E0E0E0;
+  height: 28px;
+}
+
+.docdet{
+  align-items: center;
+  margin-right: 35px;
+}
+
+.docname-container{
+  font-family: 'Anton', sans-serif;
+  align-items: center;
+}
+
+.docname-container > p{
+  color: #E41E51;
+  font-size: 30px;
+}
+
+.docname-container > p:nth-child(2){
+  display: none;
+}
+
+.apnt-btn{
+  border-color: transparent;
+  border-radius: 20px;
+  border-radius: 20px;
+  background-color: #E41E51;
+  height: 45px;
+  width: 150px;
+  color: #ffff;
+  letter-spacing: 1px;
+}
+
+.docdet-mob{
+  display: none;
+}
+
+.nav-container {
+  padding: 20px 120px;
+  position: relative;
+  left: 50%;
+  z-index: 1;
+}
+
+.nav-container p{
+  color: var(--color-bg);
+  margin-right: 70px;
+  position: relative;
+  z-index: 1;
+}
+
+.underline-anim:after{
+  content: "";
+  width: 0;
+  display: block;
+  height: 1.5px;
+  background-color: var(--underline);
+  transition: width 0.3s ease-in;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.underline-anim:hover:after{
+  width: 100%;
+}
+
+.banner-container > picture > img{
+  /* height:400px; */
+  width:100%;
+}
+
+.banner-container > h1{
+  position: absolute;
+  color: #ffffff;
+  top: 45%;
+  font-size: 50px;
+  max-width: 49%;
+  left: 30px;
+}
+

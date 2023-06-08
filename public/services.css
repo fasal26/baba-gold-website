@@ -1,0 +1,41 @@
+.baba-svc-container > h2{
+    justify-content: center;
+    padding: 50px 0;
+    color: var(--color-dark-gold);
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.baba-svc-container{
+    background-color: #e7e7e7;
+    /* padding-bottom: 105px; */
+}
+
+.card{
+    box-shadow: 0 0px 10px 0 rgba(0,0,0,.1);
+    padding: 40px;
+    border: none;
+    border-radius: 10px;
+    max-width: 40%;
+    gap: 30px;
+}
+
+.card > img{
+    width: 55px;
+    height: 55px;
+}
+
+.svc-cntnt > h4{
+    color: var(--sa-custom-v1);
+    padding-bottom: 25px;
+}
+
+.svc-cntnt > p{
+    line-height: 23px;
+}
+
+.cards-container{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
