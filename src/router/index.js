@@ -20,7 +20,7 @@ export function createRouter() {
             { path: "/about", name: 'About', component: About },
             { path: "/our-story", name: 'OurStory', component: Story },
             { path: "/services", name: 'Services', component: Services },
-            { path: '/:pathMatch(.*)*', redirect: "/" },
+            // { path: '/:pathMatch(.*)*', redirect: "/" },
         ],
         scrollBehavior() {
             let element = document.getElementById('app')
