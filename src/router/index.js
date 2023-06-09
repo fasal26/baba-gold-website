@@ -15,12 +15,13 @@ const Services = () => import("../components/Services.vue")
 export function createRouter() {
     const router =  _createRouter({
         history: createWebHistory(),
+        base: '/baba-gold-website/',
         routes: [
             { path: "/", name: 'HomePage', component: HomePage },
             { path: "/about", name: 'About', component: About },
             { path: "/our-story", name: 'OurStory', component: Story },
             { path: "/services", name: 'Services', component: Services },
-            { path: '/:pathMatch(.*)*', redirect: "/" },
+            // { path: '/:pathMatch(.*)*', redirect: "/" },
         ],
         scrollBehavior() {
             let element = document.getElementById('app')
